@@ -3,56 +3,1505 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>45 نصيحة لتزيين غرف المواليد</title>
+    <title>منصتي (Mansati) — منصة التجارة الإلكترونية الذكية</title>
+    <meta name="description" content="منصتي هي منصة تجارة إلكترونية ذكية تتيح لأي شخص إنشاء متجره الإلكتروني بسهولة واحتراف">
+    <meta name="keywords" content="منصتي, Mansati, تجارة إلكترونية, متجر إلكتروني, منصة تجارة">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="منصتي — تجارتك تبدأ من هنا">
+    <meta property="og:description" content="منصة تجارة إلكترونية ذكية لإنشاء متجرك الإلكتروني خلال دقائق">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- MathJax -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)'], ['$$', '$$'], ['\\[', '\\]']], 
+                displayMath: []
+            },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; text-align: center; }
-        .congrats { color: #d9534f; font-weight: bold; font-size: 1.2em; }
-        .highlight { color: red; font-weight: bold; }
-        .master-rights { background-color: #fff9c4; border: 1px solid #fbc02d; padding: 15px; margin: 20px 0; }
-        .order-box { border: 2px dashed #d9534f; padding: 20px; background-color: #fffde7; margin-top: 30px; }
-        .btn-global { background-color: #ff5a5f; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: block; margin: 10px auto; font-weight: bold; width: 80%; }
-        .btn-local { background-color: #25d366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: block; margin: 10px auto; font-weight: bold; width: 80%; }
-        ul { text-align: right; display: inline-block; }
+        /* ==================== Global Styles ==================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #3b82f6;
+            --primary-green: #10b981;
+            --dark-blue: #1e40af;
+            --purple-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --light-bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            --text-dark: #2d3748;
+            --text-gray: #4a5568;
+        }
+
+        body {
+            font-family: 'Cairo', 'Tajawal', sans-serif;
+            background: var(--light-bg);
+            color: var(--text-dark);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* ==================== Navigation Bar ==================== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            z-index: 1000;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--dark-blue);
+        }
+
+        .navbar-logo {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            font-weight: 800;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .navbar-logo::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-radius: 6px;
+            top: 8px;
+            right: 8px;
+        }
+
+        .navbar-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-gray);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        /* ==================== Hero Section ==================== */
+        .hero-section {
+            min-height: 100vh;
+            background: var(--purple-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 120px 40px 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-decoration {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.08;
+        }
+
+        .hero-circle-1 {
+            width: 500px;
+            height: 500px;
+            background: white;
+            top: -200px;
+            right: -200px;
+        }
+
+        .hero-circle-2 {
+            width: 400px;
+            height: 400px;
+            background: var(--primary-green);
+            bottom: -150px;
+            left: -150px;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            z-index: 1;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-logo {
+            width: 160px;
+            height: 160px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+            border-radius: 35px;
+            margin: 0 auto 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 90px;
+            font-weight: 800;
+            color: white;
+            box-shadow: 0 25px 60px rgba(59, 130, 246, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-logo::before {
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            border: 5px solid rgba(255,255,255,0.3);
+            border-radius: 18px;
+            top: 22px;
+            right: 22px;
+        }
+
+        .hero-title {
+            font-size: 5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 25px rgba(0,0,0,0.2);
+            letter-spacing: 2px;
+        }
+
+        .hero-subtitle-en {
+            font-size: 2rem;
+            font-weight: 300;
+            opacity: 0.95;
+            letter-spacing: 4px;
+            margin-bottom: 15px;
+        }
+
+        .hero-tagline {
+            font-size: 2.3rem;
+            font-weight: 600;
+            margin-top: 30px;
+            padding: 22px 45px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 55px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            display: inline-block;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2.5rem;
+            animation: bounce 2s infinite;
+            opacity: 0.7;
+        }
+
+        /* ==================== Section Styles ==================== */
+        .section {
+            padding: 90px 60px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--dark-blue);
+            margin-bottom: 18px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .title-underline {
+            width: 130px;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-blue), var(--primary-green));
+            margin: 18px auto;
+            border-radius: 3px;
+        }
+
+        /* ==================== Two Column Layout ==================== */
+        .two-column-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 28px;
+            padding: 42px;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(59, 130, 246, 0.18);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 18px;
+        }
+
+        .card-title {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: var(--dark-blue);
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            font-size: 1.2rem;
+            line-height: 1.85;
+            margin-bottom: 17px;
+            padding-right: 36px;
+            position: relative;
+            color: var(--text-gray);
+            font-weight: 500;
+        }
+
+        .feature-list li::before {
+            content: '✓';
+            position: absolute;
+            right: 0;
+            top: 2px;
+            width: 27px;
+            height: 27px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* ==================== Features Grid ==================== */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 28px;
+            margin-top: 40px;
+        }
+
+        .feature-item {
+            background: white;
+            border-radius: 22px;
+            padding: 32px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border-right: 5px solid transparent;
+        }
+
+        .feature-item:nth-child(1) { border-right-color: var(--primary-blue); }
+        .feature-item:nth-child(2) { border-right-color: var(--primary-green); }
+        .feature-item:nth-child(3) { border-right-color: #8b5cf6; }
+        .feature-item:nth-child(4) { border-right-color: #f59e0b; }
+        .feature-item:nth-child(5) { border-right-color: #ef4444; }
+        .feature-item:nth-child(6) { border-right-color: #06b6d4; }
+        .feature-item:nth-child(7) { border-right-color: #ec4899; }
+        .feature-item:nth-child(8) { border-right-color: #84cc16; }
+
+        .feature-item:hover {
+            transform: translateX(-8px);
+            box-shadow: 0 12px 35px rgba(59, 130, 246, 0.15);
+        }
+
+        .feature-check {
+            min-width: 40px;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .feature-text {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        /* ==================== Three Column Layout ==================== */
+        .three-column-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 40px;
+        }
+
+        .column-card {
+            background: white;
+            border-radius: 25px;
+            padding: 38px;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .column-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 18px 48px rgba(59, 130, 246, 0.18);
+        }
+
+        .column-icon {
+            font-size: 4rem;
+            margin-bottom: 22px;
+        }
+
+        .column-title {
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: var(--dark-blue);
+            margin-bottom: 22px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        /* ==================== Stats Section ==================== */
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 28px;
+            margin-top: 45px;
+        }
+
+        .stat-box {
+            background: white;
+            border-radius: 22px;
+            padding: 35px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.09);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-box:hover {
+            transform: scale(1.05);
+        }
+
+        .stat-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .stat-number {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--dark-blue);
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 1.15rem;
+            color: var(--text-gray);
+            font-weight: 500;
+        }
+
+        /* ==================== Pricing Plans ==================== */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 45px;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 26px;
+            padding: 40px 34px;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-top: 6px solid transparent;
+            position: relative;
+        }
+
+        .pricing-card.featured {
+            border-top-color: var(--primary-blue);
+            transform: scale(1.05);
+            box-shadow: 0 18px 50px rgba(59, 130, 246, 0.25);
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+            color: white;
+            padding: 8px 24px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        .plan-name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark-blue);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .plan-price {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-green);
+            margin-bottom: 28px;
+        }
+
+        .plan-features {
+            list-style: none;
+            padding: 0;
+        }
+
+        .plan-features li {
+            font-size: 1.1rem;
+            line-height: 1.75;
+            margin-bottom: 13px;
+            padding-right: 30px;
+            position: relative;
+            color: var(--text-gray);
+        }
+
+        .plan-features li::before {
+            content: '✓';
+            position: absolute;
+            right: 0;
+            top: 2px;
+            color: var(--primary-green);
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* ==================== CTA Section ==================== */
+        .cta-section {
+            background: var(--purple-gradient);
+            padding: 100px 60px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-decoration {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.07;
+            background: white;
+        }
+
+        .cta-circle-1 {
+            width: 450px;
+            height: 450px;
+            top: -180px;
+            left: -180px;
+        }
+
+        .cta-circle-2 {
+            width: 380px;
+            height: 380px;
+            bottom: -150px;
+            right: -150px;
+        }
+
+        .cta-content {
+            max-width: 850px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .cta-text {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: var(--dark-blue);
+            padding: 20px 50px;
+            border-radius: 55px;
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 45px rgba(0,0,0,0.3);
+        }
+
+        /* ==================== Footer ==================== */
+        .footer {
+            background: #1a202c;
+            color: white;
+            padding: 60px 40px 35px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+            border-radius: 20px;
+            margin: 0 auto 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 46px;
+            font-weight: 800;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer-logo::before {
+            content: '';
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-radius: 10px;
+            top: 11px;
+            right: 11px;
+        }
+
+        .footer-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .footer-tagline {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin-bottom: 30px;
+        }
+
+        .footer-contact {
+            font-size: 1.1rem;
+            line-height: 2;
+            margin-bottom: 25px;
+        }
+
+        .footer-link {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.3rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--primary-green);
+        }
+
+        .footer-copyright {
+            margin-top: 35px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.95rem;
+            opacity: 0.7;
+        }
+
+        /* ==================== Animations ==================== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(-15px); }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out both;
+        }
+
+        .animate-delay-1 { animation-delay: 0.1s; }
+        .animate-delay-2 { animation-delay: 0.2s; }
+        .animate-delay-3 { animation-delay: 0.3s; }
+        .animate-delay-4 { animation-delay: 0.4s; }
+
+        /* ==================== Responsive Design ==================== */
+        @media (max-width: 1200px) {
+            .three-column-grid,
+            .stats-container,
+            .pricing-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .two-column-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero-title {
+                font-size: 3.5rem;
+            }
+
+            .section {
+                padding: 70px 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.8rem;
+            }
+
+            .hero-subtitle-en {
+                font-size: 1.5rem;
+            }
+
+            .hero-tagline {
+                font-size: 1.6rem;
+                padding: 16px 30px;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .three-column-grid,
+            .stats-container,
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section {
+                padding: 55px 25px;
+            }
+
+            .content-card,
+            .column-card,
+            .pricing-card {
+                padding: 28px;
+            }
+
+            .cta-title {
+                font-size: 2.4rem;
+            }
+
+            .cta-text {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* ==================== Smooth Scroll ==================== */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Highlight Boxes */
+        .highlight-box {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            border-radius: 18px;
+            padding: 26px;
+            margin-top: 25px;
+            border-right: 5px solid var(--primary-blue);
+        }
+
+        .highlight-box.green {
+            background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+            border-right-color: var(--primary-green);
+        }
+
+        .highlight-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--dark-blue);
+            margin-bottom: 12px;
+        }
+
+        .highlight-text {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            line-height: 1.7;
+        }
+
+        /* Status Badges */
+        .status-badges {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            margin: 22px 0;
+        }
+
+        .status-badge {
+            background: linear-gradient(135deg, #f6f8fb 0%, #e9ecef 100%);
+            border-radius: 14px;
+            padding: 16px;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .status-badge:hover {
+            transform: scale(1.05);
+        }
+
+        .status-badge.new { border-color: var(--primary-blue); }
+        .status-badge.processing { border-color: #f59e0b; }
+        .status-badge.completed { border-color: var(--primary-green); }
+        .status-badge.cancelled { border-color: #ef4444; }
     </style>
 </head>
 <body>
 
-    <h1>هل تنتظرون مولوداً جديداً في القريب العاجل؟</h1>
-    <p class="congrats">تهانينا لكم!</p>
-    <p>هذا وقت مميز جداً في حياتكم، ونعلم أنكم تريدون أن يكون كل شيء مثالياً، خاصة غرفة طفلكم الجديدة.</p>
-    
-    <h2 class="highlight">45 نصيحة لتزيين غرف المواليد يمكنها مساعدتكم!</h2>
-
-    <div class="master-rights">
-        <h3>حقوق إعادة البيع الكاملة (Master Resale Rights)</h3>
-        <p>احصل على التقرير اليوم واحصل أيضاً على تصريح ببيعه للآخرين والاحتفاظ بالأرباح لنفسك!</p>
-    </div>
-
-    <p>كيف تضمن أن تكون الغرفة مثالية؟ هذا التقرير مليء بالأفكار والحيل وملاحظات السلامة، وكل ذلك بسعر بسيط.</p>
-
-    <h3>يتضمن التقرير:</h3>
-    <ul>
-        <li>تصاميم تناسب الأولاد والبنات أو غرف محايدة.</li>
-        <li>احتياطات السلامة الهامة التي يجب اتباعها.</li>
-        <li>الأثاث الضروري الذي تحتاجه الغرفة فعلياً.</li>
-    </ul>
-
-    <div class="order-box">
-        <h3>نعم، أريد الحصول على هذه الحزمة الرائعة الآن!</h3>
-        <p>عملية الطلب سهلة وسريعة، اختر وسيلة الدفع المناسبة لك:</p>
-
-        <a href="https://alisaleh5.gumroad.com/l/yjehtz" class="btn-global">
-            الشراء عبر الفيزا / ماستركارد (عالمياً)
+    <!-- ==================== Navigation Bar ==================== -->
+    <nav class="navbar">
+        <a href="#home" class="navbar-brand">
+            <div class="navbar-logo">M</div>
+            <span class="navbar-title">منصتي</span>
         </a>
+        <ul class="nav-links">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">عن المنصة</a></li>
+            <li><a href="#features">الميزات</a></li>
+            <li><a href="#pricing">الأسعار</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+    </nav>
 
-        <a href="https://wa.me/967XXXXXXXXX?text=أريد_شراء_كتاب_تزيين_غرف_المواليد" class="btn-local">
-            الدفع عبر (كاش / جوالي / الكريمي) داخل اليمن
-        </a>
-    </div>
+    <!-- ==================== Hero Section ==================== -->
+    <section class="hero-section" id="home">
+        <div class="hero-decoration hero-circle-1"></div>
+        <div class="hero-decoration hero-circle-2"></div>
+        
+        <div class="hero-content">
+            <div class="hero-logo">M</div>
+            <h1 class="hero-title">منصتي</h1>
+            <p class="hero-subtitle-en">MANSATI</p>
+            <div class="hero-tagline">
+                🚀 تجارتك تبدأ من هنا
+            </div>
+        </div>
 
-    <p style="margin-top: 20px; font-size: 0.8em; color: #777;">
-        مع تحياتي، <br> <strong>علي صالح</strong>
-    </p>
+        <div class="scroll-indicator">⬇️</div>
+    </section>
+
+    <!-- ==================== About Section ==================== -->
+    <section class="section" id="about">
+        <div class="section-header animate-fadeInUp">
+            <h2 class="section-title">فكرة التطبيق والرؤية</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="two-column-grid">
+            <div class="content-card animate-fadeInUp animate-delay-1">
+                <div class="card-icon">🧩</div>
+                <h3 class="card-title">ما هو منصتي؟</h3>
+                <ul class="feature-list">
+                    <li>منصة تجارة إلكترونية متكاملة (مشابهة لسلة)</li>
+                    <li>تتيح لأي تاجر إنشاء متجر إلكتروني خاص به خلال دقائق</li>
+                    <li>رابط مستقل لكل متجر</li>
+                    <li>إدارة كاملة للمنتجات والطلبات والعملاء</li>
+                </ul>
+            </div>
+
+            <div class="content-card animate-fadeInUp animate-delay-2">
+                <div class="card-icon">🎯</div>
+                <h3 class="card-title">الهدف الأساسي</h3>
+                
+                <div class="highlight-box">
+                    <div class="highlight-title">رؤيتنا</div>
+                    <div class="highlight-text">
+                        تمكين الأفراد والتجار من إنشاء متجرهم الإلكتروني بدون خبرة تقنية
+                    </div>
+                </div>
+
+                <ul class="feature-list" style="margin-top: 25px;">
+                    <li>سهولة الاستخدام للجميع</li>
+                    <li>حلول متكاملة ومتكاملة</li>
+                    <li>دعم فني مستمر</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Brand Identity Section ==================== -->
+    <section class="section" style="background: var(--purple-gradient); color: white; border-radius: 35px; margin: 0 60px; padding: 70px 50px;">
+        <div class="section-header animate-fadeInUp">
+            <h2 class="section-title" style="color: white;">الهوية البصرية والشعار</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="three-column-grid">
+            <div class="content-card animate-fadeInUp animate-delay-1">
+                <div style="text-align: center; font-size: 3.5rem; margin-bottom: 18px;">🏷️</div>
+                <h3 class="card-title" style="justify-content: center;">مفهوم الشعار</h3>
+                
+                <div style="width: 130px; height: 130px; background: linear-gradient(135deg, var(--primary-blue), var(--primary-green)); border-radius: 28px; margin: 0 auto 25px; display: flex; justify-content: center; align-items: center; font-size: 72px; font-weight: 800; color: white; box-shadow: 0 12px 35px rgba(59, 130, 246, 0.4); position: relative; overflow: hidden;">
+                    M
+                    <div style="position: absolute; width: 56px; height: 56px; border: 4px solid rgba(255,255,255,0.3); border-radius: 15px; top: 19px; right: 19px;"></div>
+                </div>
+
+                <ul class="feature-list">
+                    <li>أيقونة متجر (Store) بشكل حديث</li>
+                    <li>حرف M مدمج بشكل ذكي</li>
+                    <li>تصميم بسيط وسهل التذكر</li>
+                </ul>
+            </div>
+
+            <div class="content-card animate-fadeInUp animate-delay-2">
+                <div style="text-align: center; font-size: 3.5rem; margin-bottom: 18px;">🎨</div>
+                <h3 class="card-title" style="justify-content: center;">نظام الألوان</h3>
+                
+                <div style="display: flex; gap: 20px; justify-content: center; margin: 25px 0;">
+                    <div style="text-align: center;">
+                        <div style="width: 85px; height: 85px; background: linear-gradient(135deg, var(--primary-blue), #2563eb); border-radius: 50%; margin: 0 auto 12px; box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);"></div>
+                        <div style="font-weight: 600; color: var(--dark-blue);">أزرق تقني 🔵</div>
+                        <div style="font-size: 0.9rem; color: var(--text-gray);">ثقة وأمان</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="width: 85px; height: 85px; background: linear-gradient(135deg, var(--primary-green), #059669); border-radius: 50%; margin: 0 auto 12px; box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);"></div>
+                        <div style="font-weight: 600; color: var(--dark-blue);">أخضر 💚</div>
+                        <div style="font-size: 0.9rem; color: var(--text-gray);">نمو وأرباح</div>
+                    </div>
+                </ul>
+
+                <ul class="feature-list">
+                    <li>ألوان متناسقة وعصرية</li>
+                    <li>تعبر عن القيم الأساسية</li>
+                    <li>مناسبة للتجارة الرقمية</li>
+                </ul>
+            </div>
+
+            <div class="content-card animate-fadeInUp animate-delay-3">
+                <div style="text-align: center; font-size: 3.5rem; margin-bottom: 18px;">✨</div>
+                <h3 class="card-title" style="justify-content: center;">الأسلوب التصميمي</h3>
+                
+                <div style="background: linear-gradient(135deg, #f6f8fb 0%, #e9ecef 100%); padding: 28px; border-radius: 18px; text-align: center; margin: 25px 0; border: 2px dashed #cbd5e0;">
+                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--dark-blue); letter-spacing: 1px;">Minimal + Modern</div>
+                    <p style="margin-top: 10px; color: var(--text-gray);">بسيط + حديث</p>
+                </div>
+
+                <ul class="feature-list">
+                    <li>تصميم نظيف ومرتب</li>
+                    <li>تركيز على المحتوى</li>
+                    <li>سهولة الاستخدام</li>
+                    <li>احترافية عالية</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Features Section ==================== -->
+    <section class="section" id="features">
+        <div class="section-header animate-fadeInUp">
+            <h2 class="section-title">الميزات الرئيسية — نظرة عامة</h2>
+            <div class="title-underline"></div>
+            <p style="font-size: 1.5rem; color: var(--text-gray); margin-top: 15px;">💡 لماذا منصتي؟</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-item animate-fadeInUp animate-delay-1">
+                <div class="feature-check">✓</div>
+                <div class="feature-text">إنشاء متجر إلكتروني خلال دقائق</div>
+            </div>
+
+            <div class="feature-item animate-fadeInUp animate-delay-1">
+                <div class="feature-check">✓</div>
+                <div class="feature-text">واجهة سهلة الاستخدام (لا تحتاج خبرة تقنية)</div>
+            </div>
+
+            <div class="feature-item animate-fadeInUp animate-delay-2">
+                <div class="feature-check">✓</div>
+                <div class="feature-text">رابط خاص لكل متجر (mansati.com/store/username)</div>
+            </div>
+
+            <div class="feature-item animate-fadeInUp animate-delay-2">
+                <div class="feature-check">✓</div>
+                <div class="feature-text">إدارة متكاملة للمنتجات والطلبات والعملاء</div>
+            </div>
+
+            <div class="feature-item animate-fadeInUp animate-delay-3">
+                <div class="feature-check">✓</div>
+                <div class="feature-text">دعم متعدد لوسائل الدفع والشحن</div>
+            </div>
+
+            <div class="feature-item animate-fadeInUp animate-delay-3">
+                <div class="feature-check">✓</div>
+                <div class="feature-text">تقارير وإحصائيات تفصيلية</div>
+            </div>
+
+            <div class="feature-item animate-fadeInUp animate-delay-4">
+                <div class="feature-check">✓</div>
+                <div class="feature-text">قوالب تصميم احترافية قابلة للتخصيص</div>
+            </div>
+
+            <div class="feature-item animate-fadeInUp animate-delay-4">
+                <div class="feature-check">✓</div>
+                <div class="feature-text">دعم المنتجات الرقمية والمادية</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Dashboard & Management Section ==================== -->
+    <section class="section" style="background: var(--purple-gradient); color: white; border-radius: 35px; margin: 0 60px; padding: 70px 50px;">
+        <div class="section-header animate-fadeInUp">
+            <h2 class="section-title" style="color: white;">لوحة التحكم والإدارة</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="two-column-grid">
+            <div class="content-card animate-fadeInUp animate-delay-1">
+                <div style="font-size: 3rem; text-align: center; margin-bottom: 18px;">🏠</div>
+                <h3 class="card-title" style="justify-content: center;">لوحة التحكم الرئيسية</h3>
+                
+                <div style="background: var(--purple-gradient); border-radius: 18px; padding: 26px; margin-bottom: 25px; text-align: center; color: white; box-shadow: 0 10px 30px rgba(102, 126, 234, 0.35);">
+                    <div style="font-size: 2.3rem; margin-bottom: 10px;">👋</div>
+                    <div style="font-size: 1.4rem; font-weight: 600;">مرحباً بك في منصتي!</div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-bottom: 25px;">
+                    <div style="background: linear-gradient(135deg, #f6f8fb 0%, #e9ecef 100%); border-radius: 14px; padding: 18px; text-align: center;">
+                        <div style="font-size: 1.8rem; margin-bottom: 6px;">📦</div>
+                        <div style="font-size: 0.95rem; color: var(--text-gray);">الطلبات الجديدة</div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #f6f8fb 0%, #e9ecef 100%); border-radius: 14px; padding: 18px; text-align: center;">
+                        <div style="font-size: 1.8rem; margin-bottom: 6px;">💰</div>
+                        <div style="font-size: 0.95rem; color: var(--text-gray);">إجمالي الأرباح</div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #f6f8fb 0%, #e9ecef 100%); border-radius: 14px; padding: 18px; text-align: center;">
+                        <div style="font-size: 1.8rem; margin-bottom: 6px;">🛍️</div>
+                        <div style="font-size: 0.95rem; color: var(--text-gray);">عدد المنتجات</div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #f6f8fb 0%, #e9ecef 100%); border-radius: 14px; padding: 18px; text-align: center;">
+                        <div style="font-size: 1.8rem; margin-bottom: 6px;">👥</div>
+                        <div style="font-size: 0.95rem; color: var(--text-gray);">عدد العملاء</div>
+                    </div>
+                </div>
+
+                <ul class="feature-list">
+                    <li>إحصائيات فورية في لمحة واحدة</li>
+                    <li>وصول سريع لجميع الأقسام</li>
+                </ul>
+            </div>
+
+            <div class="content-card animate-fadeInUp animate-delay-2">
+                <div style="font-size: 3rem; text-align: center; margin-bottom: 18px;">🏪📦</div>
+                <h3 class="card-title" style="justify-content: center;">إدارة المتجر والمنتجات</h3>
+                
+                <ul class="feature-list">
+                    <li>تعديل اسم المتجر والوصف والشعار والبانر</li>
+                    <li>رابط المتجر المخصص</li>
+                    <li>اختيار قالب التصميم (Themes)</li>
+                    <li>إضافة / تعديل / حذف المنتجات بسهولة</li>
+                    <li>دعم الصور المتعددة والأسعار والخصومات</li>
+                    <li>تصنيف المنتجات وتنظيمها</li>
+                    <li>دعم المنتجات الرقمية والمادية</li>
+                    <li>متغيرات المنتج (مقاسات – ألوان – خيارات)</li>
+                </ul>
+
+                <div class="highlight-box green">
+                    <div class="highlight-title" style="color: #059669;">🔗 رابط المتجر</div>
+                    <div class="highlight-text">
+                        كل متجر يحصل على رابط مستقل:<br>
+                        <strong style="color: var(--primary-blue);">mansati.com/store/username</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Orders & Customers Section ==================== -->
+    <section class="section">
+        <div class="section-header animate-fadeInUp">
+            <h2 class="section-title">نظام الطلبات والعملاء</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="two-column-grid">
+            <div class="content-card animate-fadeInUp animate-delay-1" style="border-top: 6px solid var(--primary-blue);">
+                <div style="font-size: 3rem; margin-bottom: 18px;">🧾</div>
+                <h3 class="card-title">إدارة الطلبات</h3>
+                
+                <ul class="feature-list">
+                    <li>عرض جميع الطلبات وتتبعها</li>
+                    <li>تفاصيل كاملة لكل طلب</li>
+                    <li>تصفية حسب الحالة والتاريخ</li>
+                </ul>
+
+                <div style="margin: 25px 0;">
+                    <div style="font-size: 1.3rem; font-weight: 700; color: var(--dark-blue); margin-bottom: 15px;">📋 حالات الطلب:</div>
+                    <div class="status-badges">
+                        <div class="status-badge new">🆕 جديدة</div>
+                        <div class="status-badge processing">⏳ قيد التنفيذ</div>
+                        <div class="status-badge completed">✅ مكتملة</div>
+                        <div class="status-badge cancelled">❌ ملغية</div>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 22px;">
+                    <button style="background: linear-gradient(135deg, var(--primary-blue), var(--primary-green)); color: white; border: none; border-radius: 14px; padding: 16px 24px; font-size: 1.1rem; font-weight: 600; cursor: pointer; font-family: Cairo, sans-serif; box-shadow: 0 5px 18px rgba(59, 130, 246, 0.3);">
+                        🚚 تم الشحن
+                    </button>
+                    <button style="background: linear-gradient(135deg, #8b5cf6, #a855f7); color: white; border: none; border-radius: 14px; padding: 16px 24px; font-size: 1.1rem; font-weight: 600; cursor: pointer; font-family: Cairo, sans-serif; box-shadow: 0 5px 18px rgba(139, 92, 246, 0.3);">
+                        ✅ تم التسليم
+                    </button>
+                </div>
+            </div>
+
+            <div class="content-card animate-fadeInUp animate-delay-2" style="border-top: 6px solid var(--primary-green);">
+                <div style="font-size: 3rem; margin-bottom: 18px;">👥</div>
+                <h3 class="card-title">إدارة العملاء</h3>
+                
+                <ul class="feature-list">
+                    <li>قائمة شاملة بجميع العملاء</li>
+                    <li>تفاصيل كل عميل (اسم، هاتف، بريد)</li>
+                    <li>سجل كامل للطلبات لكل عميل</li>
+                    <li>إحصائيات تفاعل العميل</li>
+                    <li>إمكانية التواصل المباشر</li>
+                    <li>تصنيف العملاء حسب النشاط</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <div class="highlight-title">👤 معلومات العميل</div>
+                    <div class="highlight-text">
+                        • الاسم الكامل<br>
+                        • رقم الهاتف<br>
+                        • البريد الإلكتروني<br>
+                        • عدد الطلبات السابقة<br>
+                        • إجمالي المشتريات
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Payment & Shipping Section ==================== -->
+    <section class="section" style="background: var(--light-bg);">
+        <div class="section-header animate-fadeInUp">
+            <h2 class="section-title">الدفع والشحن</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="two-column-grid">
+            <div class="content-card animate-fadeInUp animate-delay-1" style="border-top: 6px solid var(--primary-blue);">
+                <div style="font-size: 3rem; margin-bottom: 18px;">💳</div>
+                <h3 class="card-title">نظام الدفع</h3>
+                
+                <div style="font-size: 1.2rem; font-weight: 600; color: var(--text-gray); margin-bottom: 18px;">💰 وسائل الدفع المدعومة:</div>
+
+                <div style="display: grid; grid-template-columns: 1fr; gap: 14px; margin: 22px 0;">
+                    <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border-radius: 16px; padding: 20px 24px; display: flex; align-items: center; gap: 16px; border-right: 4px solid var(--primary-blue);">
+                        <div style="font-size: 2.2rem;">🏦</div>
+                        <div style="font-size: 1.2rem; font-weight: 600; color: var(--dark-blue);">تحويل بنكي</div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border-radius: 16px; padding: 20px 24px; display: flex; align-items: center; gap: 16px; border-right: 4px solid var(--primary-blue);">
+                        <div style="font-size: 2.2rem;">💵</div>
+                        <div style="font-size: 1.2rem; font-weight: 600; color: var(--dark-blue);">الدفع عند الاستلام</div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border-radius: 16px; padding: 20px 24px; display: flex; align-items: center; gap: 16px; border-right: 4px solid var(--primary-blue);">
+                        <div style="font-size: 2.2rem;">📱</div>
+                        <div style="font-size: 1.2rem; font-weight: 600; color: var(--dark-blue);">محافظ إلكترونية</div>
+                    </div>
+                </div>
+
+                <ul class="feature-list">
+                    <li>إدارة المدفوعات وتتبعها</li>
+                    <li>تأكيد الدفع التلقائي</li>
+                    <li>إشعارات فورية للمدفوعات</li>
+                </ul>
+
+                <div style="background: var(--purple-gradient); border-radius: 16px; padding: 24px; margin-top: 22px; text-align: center; color: white; box-shadow: 0 10px 30px rgba(102, 126, 234, 0.35);">
+                    <div style="font-size: 2.3rem; margin-bottom: 10px;">🔒</div>
+                    <div style="font-size: 1.2rem; font-weight: 600;">أمان الدفع</div>
+                    <div style="font-size: 1rem; margin-top: 8px; opacity: 0.95;">جميع المعاملات محمية بأحدث تقنيات التشفير</div>
+                </div>
+            </div>
+
+            <div class="content-card animate-fadeInUp animate-delay-2" style="border-top: 6px solid var(--primary-green);">
+                <div style="font-size: 3rem; margin-bottom: 18px;">🚚</div>
+                <h3 class="card-title">نظام الشحن</h3>
+                
+                <ul class="feature-list">
+                    <li>إعداد شركات الشحن المتعددة</li>
+                    <li>تحديد تكلفة الشحن حسب المنطقة</li>
+                    <li>تحديد مناطق التوصيل المتاحة</li>
+                    <li>تتبع الطلب مباشرة في الوقت الفعلي</li>
+                    <li>إدارة حالات الشحن</li>
+                    <li>تكامل مع شركات شحن محلية وعالمية</li>
+                </ul>
+
+                <div class="highlight-box green">
+                    <div class="highlight-title" style="color: #059669;">📍 تخصيص الشحن</div>
+                    <div class="highlight-text">
+                        تحديد أسعار ومناطق الشحن حسب احتياجات عملك مع دعم خيارات متعددة
+                    </div>
+                </div>
+
+                <div class="highlight-box" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-right-color: #f59e0b; margin-top: 15px;">
+                    <div class="highlight-title" style="color: #d97706;">🚀 تتبع فوري</div>
+                    <div class="highlight-text">
+                        تتبع حالة الشحن والتوصيل بشكل مباشر مع إشعارات تلقائية للعميل
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Reports & Design Section ==================== -->
+    <section class="section">
+        <div class="section-header animate-fadeInUp">
+            <h2 class="section-title">التقارير والإحصائيات وتصميم المتجر</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="two-column-grid">
+            <div class="content-card animate-fadeInUp animate-delay-1">
+                <div style="font-size: 3rem; margin-bottom: 18px;">📊</div>
+                <h3 class="card-title">التقارير المتقدمة</h3>
+                
+                <ul class="feature-list">
+                    <li>المبيعات اليومية والأسبوعية والشهرية</li>
+                    <li>تحليل الأرباح والتكاليف</li>
+                    <li>المنتجات الأكثر مبيعاً</li>
+                    <li>رسوم بيانية تفاعلية وواضحة</li>
+                    <li>تقارير أداء المتجر الشاملة</li>
+                    <li>تصدير التقارير بصيغ متعددة</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <div class="highlight-title">📈 لوحة الإحصائيات</div>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 15px;">
+                        <div style="background: white; border-radius: 12px; padding: 14px; text-align: center; font-size: 1.05rem; font-weight: 600; box-shadow: 0 3px 10px rgba(0,0,0,0.08);">💰 المبيعات</div>
+                        <div style="background: white; border-radius: 12px; padding: 14px; text-align: center; font-size: 1.05rem; font-weight: 600; box-shadow: 0 3px 10px rgba(0,0,0,0.08);">📦 الطلبات</div>
+                        <div style="background: white; border-radius: 12px; padding: 14px; text-align: center; font-size: 1.05rem; font-weight: 600; box-shadow: 0 3px 10px rgba(0,0,0,0.08);">👥 الزوار</div>
+                        <div style="background: white; border-radius: 12px; padding: 14px; text-align: center; font-size: 1.05rem; font-weight: 600; box-shadow: 0 3px 10px rgba(0,0,0,0.08);">⭐ التقييمات</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card animate-fadeInUp animate-delay-2">
+                <div style="font-size: 3rem; margin-bottom: 18px;">🎨</div>
+                <h3 class="card-title">تصميم المتجر</h3>
+                
+                <ul class="feature-list">
+                    <li>مجموعة قوالب احترافية جاهزة</li>
+                    <li>تخصيص الألوان والخطوط بحرية</li>
+                    <li>ترتيب عناصر الصفحة الرئيسية</li>
+                    <li>معاينة مباشرة قبل النشر</li>
+                    <li>تصميم متجاوب لجميع الأجهزة</li>
+                </ul>
+
+                <div style="font-size: 1.2rem; font-weight: 600; color: #059669; margin: 22px 0 15px;">✨ خيارات التصميم:</div>
+                
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px;">
+                    <div style="background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); border-radius: 14px; padding: 18px; text-align: center; transition: all 0.3s ease;">
+                        <div style="font-size: 2rem; margin-bottom: 8px;">🎨</div>
+                        <div style="font-size: 1.05rem; font-weight: 600; color: #059669;">الألوان</div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); border-radius: 14px; padding: 18px; text-align: center; transition: all 0.3s ease;">
+                        <div style="font-size: 2rem; margin-bottom: 8px;">✏️</div>
+                        <div style="font-size: 1.05rem; font-weight: 600; color: #059669;">الخطوط</div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); border-radius: 14px; padding: 18px; text-align: center; transition: all 0.3s ease;">
+                        <div style="font-size: 2rem; margin-bottom: 8px;">📐</div>
+                        <div style="font-size: 1.05rem; font-weight: 600; color: #059669;">التخطيط</div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); border-radius: 14px; padding: 18px; text-align: center; transition: all 0.3s ease;">
+                        <div style="font-size: 2rem; margin-bottom: 8px;">🖼️</div>
+                        <div style="font-size: 1.05rem; font-weight: 600; color: #059669;">الصور</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Customer Interface Section ==================== -->
+    <section class="section" style="background: var(--purple-gradient); color: white; border-radius: 35px; margin: 0 60px; padding: 70px 50px;">
+        <div class="section-header animate-fadeInUp">
+            <h2 class="section-title" style="color: white;">واجهة متجر العميل</h2>
+            <div class="title-underline"></div>
+            <p style="font-size: 1.4rem; opacity: 0.95; margin-top: 12px;">🌐 ما يراه العميل عند زيارة المتجر</p>
+        </div>
+
+        <div class="three-column-grid">
+            <div class="content-card animate-fadeInUp animate-delay-1">
+                <div style="text-align: center; font-size: 3.5rem; margin-bottom: 18px;">🏠</div>
+                <h3 class="card-title" style="justify-content: center;">الصفحة الرئيسية</h3>
+                
+                <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-radius: 12px; padding: 14px 16px; margin-bottom: 20px; text-align: center; font-size: 1rem; font-weight: 600; color: #d97706; border: 2px solid #fbbf24;">
+                    ✨ تجربة مستخدم مميزة
+                </div>
+
+                <ul class="feature-list">
+                    <li>بانر مميز وجذاب</li>
+                    <li>عرض المنتجات بشكل منظم</li>
+                    <li>العروض والخصومات المميزة</li>
+                    <li>تصنيفات واضحة للمنتجات</li>
+                    <li>بحث سريع وفعال</li>
+                </ul>
+
+                <button style="background: linear-gradient(135deg, var(--primary-blue), var(--primary-green)); color: white; border: none; border-radius: 14px; padding: 16px 24px; font-size: 1.1rem; font-weight: 700; cursor: pointer; font-family: Cairo, sans-serif; width: 100%; margin-top: 18px; box-shadow: 0 5px 18px rgba(59, 130, 246, 0.3);">
+                    🛍️ تصفح المتجر
+                </button>
+            </div>
+
+            <div class="content-card animate-fadeInUp animate-delay-2">
+                <div style="text-align: center; font-size: 3.5rem; margin-bottom: 18px;">📦</div>
+                <h3 class="card-title" style="justify-content: center;">صفحة المنتج</h3>
+                
+                <div style="background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); border-radius: 12px; padding: 14px 16px; margin-bottom: 20px; text-align: center; font-size: 1rem; font-weight: 600; color: #059669; border: 2px solid #34d399;">
+                    🎯 تفاصيل شاملة
+                </div>
+
+                <ul class="feature-list">
+                    <li>صور متعددة بجودة عالية</li>
+                    <li>وصف تفصيلي للمنتج</li>
+                    <li>السعر والخصم الحالي</li>
+                    <li>متغيرات المنتج (لون/مقاس)</li>
+                    <li>تقييمات وآراء العملاء</li>
+                </ul>
+
+                <button style="background: linear-gradient(135deg, var(--primary-green), #059669); color: white; border: none; border-radius: 14px; padding: 16px 24px; font-size: 1.1rem; font-weight: 700; cursor: pointer; font-family: Cairo, sans-serif; width: 100%; margin-top: 18px; box-shadow: 0 5px 18px rgba(16, 185, 129, 0.3);">
+                    🛒 أضف للسلة
+                </button>
+            </div>
+
+            <div class="content-card animate-fadeInUp animate-delay-3">
+                <div style="text-align: center; font-size: 3.5rem; margin-bottom: 18px;">💰</div>
+                <h3 class="card-title" style="justify-content: center;">السلة والدفع</h3>
+                
+                <div style="background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%); border-radius: 12px; padding: 14px 16px; margin-bottom: 20px; text-align: center; font-size: 1rem; font-weight: 600; color: #7c3aed; border: 2px solid #a78bfa;">
+                    🔒 دفع آمن وسريع
+                </div>
+
+                <ul class="feature-list">
+                    <li>تعديل الكميات بسهولة</li>
+                    <li>حذف المنتجات من السلة</li>
+                    <li>حساب التكلفة الإجمالية</li>
+                    <li>إتمام الطلب بسلاسة</li>
+                    <li>اختيار طريقة الدفع المناسبة</li>
+                </ul>
+
+                <button style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; border: none; border-radius: 14px; padding: 16px 24px; font-size: 1.1rem; font-weight: 700; cursor: pointer; font-family: Cairo, sans-serif; width: 100%; margin-top: 18px; box-shadow: 0 5px 18px rgba(139, 92, 246, 0.3);">
+                    💳 إتمام الشراء
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Advanced Features Section ==================== -->
+    <section class="section" id="advanced">
+        <div class="section-header animate-fadeInUp">
+            <h2 class="section-title">الميزات المتقدمة ونظام الاشتراكات</h2>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="two-column-grid">
+            <div class="content-card animate-fadeInUp animate-delay-1">
+                <div style="font-size: 3rem; margin-bottom: 18px;">🧠</div>
+                <h3 class="card-title">ميزات احترافية متقدمة</h3>
+                
+                <div style="margin-bottom: 22px;">
+                    <div style="font-size: 1.25rem; font-weight: 700; color: #059669; margin-bottom: 12px;">🎟️ التسويق والمبيعات</div>
+                    <ul class="feature-list">
+                        <li>نظام كوبونات الخصم المرن</li>
+                        <li>نظام العمولات والشراكات</li>
+                        <li>عروض خاصة وخصومات موسمية</li>
+                    </ul>
+                </div>
+
+                <div style="margin-bottom: 22px;">
+                    <div style="font-size: 1.25rem; font-weight: 700; color: var(--dark-blue); margin-bottom: 12px;">⚙️ الميزات التقنية</div>
+                    <ul class="feature-list">
+                        <li>تعدد المتاجر بحساب واحد</li>
+                        <li>API للتكامل مع أنظمة خارجية</li>
+                        <li>دعم متعدد اللغات والعملات</li>
+                    </ul>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%); border-radius: 16px; padding: 22px; border-right: 5px solid #8b5cf6;">
+                    <div style="font-size: 1.2rem; font-weight: 700; color: #7c3aed; margin-bottom: 14px;">🤖 الذكاء الاصطناعي</div>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+                        <div style="background: white; border-radius: 10px; padding: 12px; text-align: center; font-size: 1rem; font-weight: 600; color: #7c3aed; box-shadow: 0 3px 10px rgba(139, 92, 246, 0.15);">🎯 اقتراح منتجات ذكية</div>
+                        <div style="background: white; border-radius: 10px; padding: 12px; text-align: center; font-size: 1rem; font-weight: 600; color: #7c3aed; box-shadow: 0 3px 10px rgba(139, 92, 246, 0.15);">✍️ كتابة أوصاف تلقائية</div>
+                        <div style="background: white; border-radius: 10px; padding: 12px; text-align: center; font-size: 1rem; font-weight: 600; color: #7c3aed; box-shadow: 0 3px 10px rgba(139, 92, 246, 0.15);">📊 تحليل سلوك العملاء</div>
+                        <div style="background: white; border-radius: 10px; padding: 12px; text-align: center; font-size: 1rem; font-weight: 600; color: #7c3aed; box-shadow: 0 3px 10px rgba(139, 92, 246, 0.15);">💡 توصيات تحسينية</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card animate-fadeInUp animate-delay-2">
+                <div style="font-size: 3rem; margin-bottom: 18px;">📲</div>
+                <h3 class="card-title">خطط التوسع</h3>
+                
+                <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 25px;">
+                    <div style="background: linear-gradient(135deg, #f6f8fb 0%, #e9ecef 100%); border-radius: 18px; padding: 22px; border-right: 5px solid #10b981; transition: all 0.3s ease;">
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                            <div style="font-size: 1.35rem; font-weight: 700; color: var(--dark-blue);">🆓 مجاني</div>
+                            <div style="background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">للبداية</div>
+                        </div>
+                        <div style="font-size: 1rem; color: var(--text-gray); line-height: 1.65;">• متجر إلكتروني أساسي<br>• عدد محدود من المنتجات<br>• تقارير بسيطة</div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border-radius: 18px; padding: 22px; border-right: 5px solid var(--primary-blue); transition: all 0.3s ease; transform: scale(1.02); box-shadow: 0 8px 24px rgba(59, 130, 246, 0.15);">
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                            <div style="font-size: 1.35rem; font-weight: 700; color: var(--dark-blue);">⭐ احترافي</div>
+                            <div style="background: linear-gradient(135deg, var(--primary-blue), var(--primary-green)); color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">الأكثر شعبية</div>
+                        </div>
+                        <div style="font-size: 1rem; color: var(--text-gray); line-height: 1.65;">• جميع ميزات المجاني<br>• منتجات غير محدودة<br>• تقارير متقدمة + AI<br>• دعم فني أولوية</div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #f6f8fb 0%, #e9ecef 100%); border-radius: 18px; padding: 22px; border-right: 5px solid #8b5cf6; transition: all 0.3s ease;">
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                            <div style="font-size: 1.35rem; font-weight: 700; color: var(--dark-blue);">🏢 شركات</div>
+                            <div style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">مخصص</div>
+                        </div>
+                        <div style="font-size: 1rem; color: var(--text-gray); line-height: 1.65;">• كل ميزات الاحترافي<br>• متاجر متعددة<br>• API متقدم<br>• دعم على مدار الساعة</div>
+                    </div>
+                </div>
+
+                <div style="background: var(--purple-gradient); border-radius: 16px; padding: 22px; text-align: center; color: white; box-shadow: 0 8px 24px rgba(102, 126, 234, 0.35);">
+                    <div style="font-size: 2.2rem; margin-bottom: 8px;">📱</div>
+                    <div style="font-size: 1.1rem; font-weight: 600; line-height: 1.55;">تطبيق جوال قريباً<br>Android & iOS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA Section ==================== -->
+    <section class="cta-section" id="contact">
+        <div class="cta-decoration cta-circle-1"></div>
+        <div class="cta-decoration cta-circle-2"></div>
+        
+        <div class="cta-content animate-fadeInUp">
+            <div style="font-size: 5rem; margin-bottom: 25px;">🚀</div>
+            <h2 class="cta-title">ابدأ رحلتك التجارية اليوم!</h2>
+            <p class="cta-text">
+                انضم إلى آلاف التجار الذين يثقون بمنصتي لبناء متاجرهم الإلكترونية الناجحة.<br>
+                ابدأ مجاناً ولا تدفع شيئاً حتى تنمو أعمالك!
+            </p>
+            <a href="#home" class="cta-button">ابدأ الآن مجاناً ✨</a>
+        </div>
+    </section>
+
+    <!-- ==================== Footer ==================== -->
+    <footer class="footer" id="contact-info">
+        <div class="footer-logo">M</div>
+        <h3 class="footer-title">منصتي — MANSATI</h3>
+        <p class="footer-tagline">تجارتك تبدأ من هنا 🚀</p>
+        
+        <div class="footer-contact">
+            <p>📧 البريد الإلكتروني: info@mansati.com</p>
+            <p>📱 الهاتف: +966 XX XXX XXXX</p>
+            <p>🌐 الموقع: <a href="https://www.mansati.com" class="footer-link" target="_blank">www.mansati.com</a></p>
+        </div>
+
+        <div class="footer-copyright">
+            <p>© 2024 منصتي (Mansati). جميع الحقوق محفوظة.</p>
+            <p style="margin-top: 8px;">صُنع بـ ❤️ للمتاجر العربية</p>
+        </div>
+    </footer>
 
 </body>
 </html>
